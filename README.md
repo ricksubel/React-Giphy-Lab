@@ -4,31 +4,28 @@
 
 > **Note**: each step has a corresponding commit with the implemented actions on the solution branch of this repo.
 
-### Step 0: Examine the Solution
+### Step 0a: Examine the Solution
 
-Fork and clone to get a local copy of the app.
+Take a look at the [completed app here](https://react-giphy-app.herokuapp.com/) repo.
+
+Spend time playing around with the completed exercise. Think about how you would separate your different components and functionality.
 
 
-Check out to the solution branch.
+### Step 0b: Create React App
 
-```
-npm install
-npm start
-```
+Create a new React app called react-giphy.
 
-Spend time playing around with the completed exercise.  Look at `index.js`.  Think about how you would separate your different components and functionality. 
+Remove everything from `Index.js` and `App.js`.
 
-A solution with giphy gif searching is available in a [react-giphy-solution](https://github.com/sf-wdi-labs/react-giphy-solution) repo.
+Now go ahead and setup `Index.js` and `App.js` from scratch (look at docs or previous labs if you need to).
 
 
 ### Step 1: Set up a `HelloWorld` Component
 
-Move back to the `master` branch to build out the app yourself! Remove your `node_modules` folder manually, since it's included in `.gitingore`.   Re-`npm install` any packages you will need.
-
 Before we start building our React app, let's create a `HelloWorld` component just to make sure that we've tied everything together properly.  
 
 - In your `/src` directory, configure your `App.js` and `index.js` files to render a `HelloWorld` component.
-- Run `npm start` and make sure everything is working.
+- Run `npm start` and make sure everything is working (sanity check).
 
 ### Step 2: Add UI for Home
 
@@ -59,7 +56,7 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 
 ### Step 6: When a User Searches...
 
-- Define a `Results` component that will take in a collection of gif objects and render each one's `source` url as well as a fixed height image.  Go ahead an look at the [Giphy search documentation](https://github.com/Giphy/GiphyAPI#search-endpoint) to see the structure of the JSON it sends.
+- Define a `Results` component that will take in a collection of gif objects and render each one's `source` url as well as a fixed height image.  Go ahead an look at the [Giphy search documentation](https://developers.giphy.com/docs/) to see the structure of the JSON it sends.
 - Update your `SearchContainer` component's state to include whether the user has submitted a search.
 - Update `SearchContainer`'s state to include a list of results.
 - If a user has searched, instead of rendering the `Search` component, render a `Results` component with hard coded data.
@@ -116,9 +113,10 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 
 ### Step 7: Search the Giphy API
 
-- With the API we're using, you don't need to register for an API key. Go ahead an look at the [documentation](https://github.com/Giphy/GiphyAPI) to determine the API's proper usage.
+- With the API we're using, you will need to register for an API key. The API key is free, and only takes a minute or two to setup.
+- Go ahead an look at the [documentation](https://developers.giphy.com/docs/) to determine the API's proper usage.
 - We're going to be searching the giphy API based on a word or phrase to return a collection of results.
-- Load in jQuery, and use it to make an HTTP request to the API search endpoint using the user's query.
+- Load in Axios, and use it to make an HTTP request to the API search endpoint using the user's query.
 - Pass the data to the Results component to be displayed.
 
 ### Step 8: Add Styles to your React app

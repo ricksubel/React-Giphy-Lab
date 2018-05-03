@@ -113,7 +113,7 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 
 ### Step 7: Search the Giphy API
 
-- With the API we're using, you will need to register for an API key. The API key is free, and only takes a minute or two to setup.
+- With the API we're using, you will need to [register for an API key](https://developers.giphy.com/). The API key is free, and only takes a minute or two to setup.
 - Go ahead an look at the [documentation](https://developers.giphy.com/docs/) to determine the API's proper usage.
 - We're going to be searching the giphy API based on a word or phrase to return a collection of results.
 - Load in Axios, and use it to make an HTTP request to the API search endpoint using the user's query.

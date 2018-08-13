@@ -124,14 +124,14 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 
 ## Bonus
 
-### Step 8: Add Styles to your React app
+### Step 9: Add Styles to your React app
 
 - Load in Bootstrap CDN in `index.html`.
 - Modify UI to include Bootstrap classes.
 - Create a `styles` directory and make a file for your CSS rule definitions - this will be written in Javascript!.
 - Load in that file in any component and then use that to apply inline styling.
 
-### Step 9: Add a single result detail component
+### Step 10: Add a single result detail component
 
 - Create a `Details` component that renders information about a single gif.
 - When a user clicks on a  gif in the results view, render the detail UI.

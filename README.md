@@ -107,10 +107,6 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 
 </details>
 
-
-## Bonus
-
-
 ### Step 7: Search the Giphy API
 
 - With the API we're using, you will need to [register for an API key](https://developers.giphy.com/). The API key is free, and only takes a minute or two to setup.
@@ -118,6 +114,15 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 - We're going to be searching the giphy API based on a word or phrase to return a collection of results.
 - Load in Axios, and use it to make an HTTP request to the API search endpoint using the user's query.
 - Pass the data to the Results component to be displayed.
+
+### Step 8: 
+
+- Lets get rid of Search button and call the external API whenever User is entering string to search (Hint: you may have to make some changes in onInput()).
+- Now that you have that working, lets introduce some performance optimization. Make changes such that component is only re-rendered if the User changes the search string (Hint: use a lifecycle hook. Also, you may have to set the value of `state.query` in another method).
+- After you have made these changes you will notice that even though you are not re-rendering the component, but your app is still making the third-party API call. Use one of the other lifecycle hooks to prevent that from happening (Hint: think about componentDidUpdate() lifecycle method).
+
+
+## Bonus
 
 ### Step 8: Add Styles to your React app
 

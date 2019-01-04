@@ -121,7 +121,7 @@ Before we start building our React app, let's create a `HelloWorld` component ju
 - Now that you have that working, lets introduce some performance optimization. Make changes such that component is only re-rendered if the User changes the search string (Hint: use a lifecycle hook. Also, you may have to set the value of `state.query` in another method).
 - After you have made these changes you will notice that even though you are not re-rendering the component, but your app is still making the third-party API call. Use one of the other lifecycle hooks to prevent that from happening (Hint: think about componentDidUpdate() lifecycle method).
 
-
+You can view the solution (here)[https://git.generalassemb.ly/SF-WDI/react-giphy-lab/tree/solution]
 ## Bonus
 
 ### Step 9: Add Styles to your React app

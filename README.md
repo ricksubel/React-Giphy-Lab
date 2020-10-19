@@ -117,7 +117,7 @@ Spend time playing around with the completed exercise. Think about how you would
 - Once you have that working, let's introduce some performance optimization. Make changes such that the `SearchContainer` component is only re-rendered if the user changes the search string. (Hint: use a lifecycle hook. Also, you may have to set the value of `state.query` in another method.)
 - After you have made these changes you will notice that even though you are not re-rendering the component, but your app is still making the third-party API call. Use one of the other lifecycle hooks to prevent that from happening (Hint: think about componentDidUpdate() lifecycle method).
 
-You can view the solution [here](https://git.generalassemb.ly/SF-WDI/react-giphy-lab/tree/solution).
+You can view the solution [here](https://git.generalassemb.ly/WC-SEI-817/react-giphy-lab/tree/solution).
 ## Bonus
 
 ### Step 9: Add Styles to your React app

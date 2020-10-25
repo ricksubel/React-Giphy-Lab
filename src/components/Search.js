@@ -1,35 +1,15 @@
 import React from 'react';
 
-class Search extends React.Component {
-    state = { 
-        query: '',
-    }
-
-    search = () => {
-        console.log(this.state.query)
-    }
-
-    handleChange = (event) => {
-        this.setState({
-            query: event.target.value
-        })
-    }
-
-    render() {
-        return (
-            <div>
-            <form onSubmit={this.search}>
-                <input
-                type='text'
-                name='query'
-                onChange={this.handleChange}
-                value={this.state.query} />
-                <input type='submit' value='Submit'/>
-            </form>
-            </div>
-        )
-    }
+const search = (props) => {
+    return(
+        <div>
+            <input 
+                type="text" 
+                placeholder="Search here"
+                onKeyUp={props.onInput}
+            />
+        </div>
+    )
 }
 
-
-export default Search;
+export default search;

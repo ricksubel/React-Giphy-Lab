@@ -1,13 +1,15 @@
-import React from 'react';
-import './Home.css';
+  
+import React, { Component } from 'react';
+import Search from './components/Search';
 
-
-function Home() {
-    return (
-        <div className="Home">
-            <h1>Hello World</h1>
-        </div>
-    );
+class Home extends Component {
+    render() {
+        return (
+            <div className="container">
+            <Search/>
+            </div>
+        );
+    }
 }
 
 export default Home;

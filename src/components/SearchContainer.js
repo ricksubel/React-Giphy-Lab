@@ -48,7 +48,7 @@ class SearchContainer extends Component {
         if(this.state.response){
             results = this.state.response.map((result) => {
                 return (
-                    <section>
+                    <section className="container">
                         <div className="album py-5 bg-light">
                             <Results
                                 result={result}

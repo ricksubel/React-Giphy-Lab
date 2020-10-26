@@ -8,6 +8,7 @@ const search = (props) => {
                 placeholder="Search here"
                 onKeyUp={props.onInput}
             />
+            <input type="button" value="Search"/>
         </div>
     )
 }
